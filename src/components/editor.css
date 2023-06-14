@@ -1,0 +1,198 @@
+.editor {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .editor h3 {
+    margin-top: 0;
+  }
+  
+  .editor-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 5px;
+  }
+  
+  .editor-controls select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+  }
+  
+  .editor-controls button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: #f78113;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .editor-controls button:hover {
+    opacity: 0.5;
+  }
+  
+  .editor-textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    resize: vertical;
+    margin-bottom: 10px;
+   
+  }
+  
+  .image-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .image-controls label {
+    margin-right: 10px;
+  }
+  
+  .image-controls input[type="number"] {
+    width: 70px;
+    padding: 6px 8px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+  }
+  
+  .edit-image-button,
+  .remove-image-button,
+  .add-image-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .edit-image-button:hover,
+  .remove-image-button:hover,
+  .add-image-button:hover {
+    opacity: 0.5;
+  }
+  
+  .selected-image-container {
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .selected-image {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+  }
+  
+  .selected-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  
+  
+  .close-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background-color: #d32f2f;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .editor {
+      max-width: 400%;
+      padding: 10px;
+      
+    }
+    
+    .editor-controls select {
+      font-size: 14px;
+    }
+    
+    .editor-controls button {
+      font-size: 14px;
+    }
+    
+    .editor-textarea {
+      font-size: 14px;
+    }
+    
+    .selected-image {
+      max-height: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .editor {
+      max-width: 400px;
+      padding: 10px;
+    }
+    
+    .editor-controls {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .editor-controls select {
+      width: 100%;
+      font-size: 14px;
+      margin-right: 0;
+    }
+    
+    .editor-controls button {
+      width: 100%;
+      font-size: 14px;
+    }
+    
+    .editor-textarea {
+      font-size: 14px;
+    }
+    
+    .image-controls {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    
+    .image-controls input[type="number"] {
+      width: 100%;
+      font-size: 14px;
+    }
+    
+    .edit-image-button,
+    .remove-image-button,
+    .add-image-button {
+      width: 100%;
+      font-size: 14px;
+      margin-right: 0;
+    }
+  }
